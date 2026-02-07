@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <title>plastic stool</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="stool3.gif">
+    <style>
+        body{
+            background-color: white;
+            /* white-space: pre; line break preservation */
+        }
+        /* only style the text div, not all divs: */
+        #mainText {
+            position: absolute;
+            color: red;
+            background-color: blue;
+            text-shadow: 1px 3px 2px white;
+            border: 6px solid white;
+            width: 300px;
+            left: 100px;
+            top: 100px;
+            font-size: 100px;
+            font-family: Helvetica;
+            text-align: justify;
+        }
+
+        /* apply filter direct to images/video, not parent divs */
+        .media {
+            filter: sepia(30%);
+            transition: 0.5s ease;
+        }
+        .media:hover {
+            opacity: 0.2;
+            transform: rotate(10deg);
+        }
+        #stool1 {
+            position: fixed;
+            top: 90px;
+            right: 5px;
+            width: 500px;
+            border-radius: 15px 50px 30px 5px;
+            z-index: 1;
+            /* transition: 3s ease; /* ease, ease-out, ease-in-out */
+            /* make the transition of the height upon hover take 3s,
+            and make the rate of that transition slower at the beginning */
+        }
+        #stool2 {
+            position: fixed;
+            top: 50px;
+            right: 850px;
+            width: 500px;
+            border-radius: 15px 50px 30px 5px;
+            z-index: 10;     
+        }
+        video {
+            position: fixed;
+            width: 40vw;
+            top: 20vh;
+            right: 20vw;
+            border-radius: 0px 100px 10px 0px;
+            z-index: 10;
+            /* crop the top/bottom:
+            height: 80%;
+            object-fit: cover; */
+            clip-path: inset(10px 0px 50px 0px); /*top right bottom left*/
+            z-index: -10;
+        }
+        #dacBiet {
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://duytan.com/"><img id="stool1" class="media" src="stool1.png"></a>
+    <a href="https://tunapee.online"><img id="stool2" class="media" src="stool2.png"></a>
+    <video loop autoplay muted playsinline id="stoolvideo" class="media" src="stool7.mp4"></video>
+    <div id="mainText"><a id="google-translate-link" href="https://translate.google.com/?sl=en&tl=vi&text=plastic%20chair%0A&op=translate">ghế nhựa</a> bành hiện đang trở thành một trong những lựa chọn ưu tiên của người tiêu 
+        dùng nhờ vào tính đa dụng cùng giá <br> cả phải chăng. <span id="dacBiet"> Đặc biệt, sản phẩm này còn </span>
+        nổi bật trên thị trường bởi chất lượng vượt trội, giá cả hợp lý và cam kết chính hãng. 
+        Bài viết này sẽ giúp bạn hiểu rõ hơn về những ưu điểm nổi bật của ghế nhựa bành Duy Tân để sớm đưa ra lựa chọn phù hợp nhất nhé!</div>
+</body>
+</html>
